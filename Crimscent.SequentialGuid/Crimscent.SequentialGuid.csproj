@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.5</TargetFramework>
+    <Version>1.1.0</Version>
+    <TargetFrameworks>netstandard1.5;netstandard2.0</TargetFrameworks>
     <Authors>Evgeny Sudakov</Authors>
     <Company>Crimcsent</Company>
     <Description>Sequential guid generator</Description>
@@ -10,9 +11,8 @@
     <PackageTags>sequential guid generator</PackageTags>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.5'">
     <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
-    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
   </ItemGroup>
 
 </Project>
