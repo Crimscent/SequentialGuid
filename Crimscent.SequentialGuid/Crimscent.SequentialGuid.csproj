@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.5</TargetFramework>
+    <Authors>Evgeny Sudakov</Authors>
+    <Company>Crimcsent</Company>
+    <Description>Sequential guid generator</Description>
+    <PackageLicenseUrl>https://github.com/Crimscent/SequentialGuid/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Crimscent/SequentialGuid</PackageProjectUrl>
+    <PackageTags>sequential guid generator</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
